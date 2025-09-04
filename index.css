@@ -83,3 +83,49 @@
       color: #888;
       font-size: 0.9rem;
     }
+
+    /* 📱 Responsive Design for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .case-section {
+    flex-direction: column;   /* Stack text & image vertically */
+    text-align: center;
+  }
+
+  .case-section:nth-child(even) {
+    flex-direction: column;   /* Override alternating layout */
+  }
+
+  .case-text {
+    padding: 10px;
+  }
+
+  .case-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .case-text p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .case-image {
+    padding: 10px;
+  }
+
+  .case-image img {
+    max-width: 90%;  /* Scale down images */
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 20px;
+  }
+}
